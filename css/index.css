@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
     --primary-color: #141C23;
     --secondary-color: #0d1620;
     --text-color: #fff;
     --text-font: 'Ubuntu', sans-serif;;
+    --secondary-font: 'Roboto Mono', monospace;
 }
 
 * {
@@ -13,14 +15,16 @@
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     color: var(--text-color);
     background-color: var(--primary-color);
     font-family: var(--text-font);
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    
 }
+
+/* Menu de Navegação */
 
 header#cabecalho {
     z-index: 10;
@@ -58,50 +62,118 @@ ul#menu li a:hover {
     
 }
 
+/* Seções da Página */
+
 .secao {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 div#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size:100%;
-    opacity: 0.5;
+    opacity: 1;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
     background-image: url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
 }
 
-div#home {
-    background-color: ;
+div#banner_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+div#inicio_title {
+    z-index: 15;
+    text-align: center;
+    color: #fff;
+}
+
+div#inicio h1{
+    z-index: 15;
+    color: white;
+    opacity: 
 }
 
 div#habilidades {
-    background-color: rgba(255, 255, 0, 0.5);
+    /* background-color: rgba(255, 255, 0, 0.5); */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
+/* Habilidade Card */
+
 .habilidade-card{
     width: 25%;
     height: 25%;
     margin: 2%;
-    border: 1px solid #fff;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .habilidade-card i{
-    height: 50%;
+    height:50%;
 }
 
 .habilidade-card-info{
-    background-color: #fff;
+    text-align: center;
+    width: 100%;
     height: 50%;
+    border-radius: 15px;
 }
 
-div#home {
-    background-color: ;
+/* Icone Colors */
+
+.fa-html5 {
+    color: #f06124;
+}
+
+.fa-js {
+    color: #efd81d;
+}
+
+.fa-css3-alt {
+    color: #379ad6;
+}
+
+.fa-bootstrap {
+    color: #5e4088;
+}
+
+.fa-python {
+    color: #ffd43b;
+}
+
+.fa-node {
+    color: #689f63;
+}
+
+.fa-linux {
+    color: black;
+}
+
+.fa-microchip {
+    color: white;
+}
+
+footer#rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    height: 5%;
+    background-color: var(--secondary-color);
 }
 
