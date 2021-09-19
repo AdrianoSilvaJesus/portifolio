@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordeste Scroll Inifito</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titulo -->
+    <h1>Nordeste - Scroll Inifito</h1>
+    <!-- Animação de carregamento -->
+    <span id="sobre_link">Sobre</span>
+    <div id="sobre" class="hidden">
+        <i id="fecha_sobre" class="far fa-times-circle fa-2x"></i>
+        <p>Esta aplicação foi desenvolvida com HTML5, Javascript e CSS3. <br/>Seu código fonte pode ser encontrado em:
+        <p>Bibliotecas e API's Utilizadas: </p>
+        <ul>
+            <li>Unsplash (API) - usado para se obter as imagens: <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></li>
+            <li>Google Font (biblioteca) - usado para obter fontes personalizadas: <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
+            <li>Loading io (biblitoceca) - usado obter a animação de carregamento da página: <a href="https://loading.io/" target="_blank">https://loading.io/</a></li>
+        </ul>
+        <p>Criado por: Adriano Silva Jesus <i class="fab fa-github fa-2x"></i></p>
+        <p>Crédito pelas imagens: </p>
+        <ul id="lista_creditos"></ul>
+    </div>
+    <div class="loader" id="loader">
+        <img src="animacao_carregamento.svg" alt="Loading">
+    </div>
+    <!-- Image Container -->
+    <div class="image-container" id="image-container"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
