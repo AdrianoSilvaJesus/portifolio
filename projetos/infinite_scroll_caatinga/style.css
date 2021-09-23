@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 html {
   box-sizing: border-box;
@@ -22,6 +23,8 @@ h1 {
   letter-spacing: 5px;
   color: #ff6f00;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
 }
 
 /* Sobre a aplicação */

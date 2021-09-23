@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 
 :root {
     --primary-color: #141C23;
     --secondary-color: #0d1620;
     --text-color: #fff;
-    --text-font: 'Ubuntu', sans-serif;;
-    --secondary-font: 'Roboto Mono', monospace;
+    --text-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Be Vietnam Pro', sans-serif;
 }
 
 * {
@@ -31,7 +31,7 @@ header#cabecalho {
     position: fixed;
     width: 100%;
     height: 8%;
-    background-color: rgba(13, 22, 32, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 nav#menu_navegacao{
@@ -55,6 +55,7 @@ ul#menu li a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--text-color);
+    font-family: var(--secondary-font);
 }
 
 ul#menu li a:hover {
@@ -67,6 +68,12 @@ ul#menu li a:hover {
 .secao {
     height: 100vh;
     width: 100%;
+}
+
+.secao_titulo {
+    font-family: var(--secondary-font);
+    font-size: 30pt;
+    text-align: center;
 }
 
 div#inicio {
@@ -99,11 +106,10 @@ div#inicio_title {
 div#inicio h1{
     z-index: 15;
     color: white;
-    opacity: 
 }
 
 div#habilidades {
-    /* background-color: rgba(255, 255, 0, 0.5); */
+    background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -165,6 +171,75 @@ div#habilidades {
 
 .fa-microchip {
     color: white;
+}
+
+/* Projetos */
+
+div.projeto {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+}
+
+div.projeto_info {
+    display: flex;
+    width: 50%;
+    height: 80%;
+    /* background-color: blue; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.projeto_info button {
+    text-transform: capitalize;
+    outline: none;
+    padding: 5px;
+    background: none;
+    color: #0076c6;
+}
+
+div.projeto button:hover {
+    cursor: pointer;
+}
+
+button.clean {   
+    font-size: 12pt;
+    border: none;
+    font-size: 12pt;
+}
+
+button.outline {
+    font-size: 14pt;
+    transition: 0.3s;
+    border: 1px solid #0076c6;
+}
+
+button.outline:hover {
+    background: #0076c6;
+    color: #fff;
+}
+
+div.projeto_info p {
+    text-align: center;
+}
+
+div.projeto_image {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.projeto_image img {
+    width: 95%;
+    height: 95%;
+}
+
+
+hr {
+    width: 70%;
 }
 
 footer#rodape {
