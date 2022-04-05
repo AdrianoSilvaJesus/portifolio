@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Scheherazade+New&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color: #ce1c00;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+div#container {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    background-color: var(--secondary-color);
+}
+
+main {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div#lista_poetas {
+    width: 25%;
+    height: 90%;
+    border: 1px solid black;
+}
+/* Div Poema */
+div#poema {
+    width: 60%;
+    height: 90%;
+    background-color: rgba(90, 189, 255, 0.219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1#titulo_poema {
+    font-size: 25pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#poema {
+    font-family: 'Scheherazade New', serif;
+    overflow-x: auto;
+
+}
+
+p#poema_text {
+    font-family: 'Merriweather', serif;
+    font-size: 15pt;
+}
+
+ul#poetas {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    background: #fafafa;
+}
+
+ul#poetas li {
+    font-size: 16pt;
+    color: #fff;
+    height: 9%;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}

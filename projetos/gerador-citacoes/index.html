@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"/>
+    <title>Gerador de Citações</title>
+</head>
+<body>
+    <div id="citacao_container">
+        <p data-aos="fade-up" data-aos-duration="1000" id="citacao">Somos dois abismos ! - um poço fitando o céu</p>
+        <span id="autor" data-aos="fade-right" data-aos-delay="1000">Fernando Pessoa</span>
+        <div id="botoes_acao">
+            <button id="twitter_button" title="Compartilhar no Twitter."><i class="fab fa-twitter"></i></button>
+            <button id="proximo_button" title="Carregar citação."><i class="fas fa-redo-alt"></i></button>
+        </div>
+    </div>
+    <!-- Biblioteca para animar os elementos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicia a biblioteca -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- Arquivo que contem as citações -->
+    <script src="js/citacoes.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <title>Declamador de Poesias</title>
+</head>
+<body>
+    <div id="container">
+        <header id="cabecalho"></header>
+        <main>
+            <div id="lista_poetas">
+                <ul id="poetas">
+                    <li>Fernando Pessoa <i class="fas fa-sort-down"></i></li> 
+                    <li>Bertolt Brecht</li>
+                    <li>Clarice Lispector</li>
+                </ul>
+            </div>
+            <div id="poema">
+                <h1 id="titulo_poema"></h1>
+                <h2 id="autor_poema"></h1>
+                <button id="declamar">Declamar</button>
+                <div id="poema_text_box">
+                    <p id="poema_text"></p>
+                </div>
+                <audio id="audio"></audio>
+            </div>
+        </main>
+    </div>
+    <script src="js/voice.js"></script>
+    <script src="js/poemas.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
